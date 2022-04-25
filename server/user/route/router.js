@@ -15,11 +15,10 @@ route.post("/register",valid, async(req,res)=>{
         if(regist.rows.length > 0){
             return res.status(401).send("User already exists")
         }
-        //with bcrypt
+       
         const salt = await bcrypt.genSalt(10);
         const bcryptpass = await bcrypt.hash(password, salt)
 
-        //without bcrypt
         const newUser = await pool.query("INSERT INTO users(username,email,password) VALUES ($1,$2,$3) RETURNING * ",[name,email,bcryptpass])
 
         const token = jwtGen(newUser.rows[0].id)
