@@ -26,5 +26,7 @@ I will describe and explain the flow of project:
    7. and after that you can click "Submit" button direct to Brochure path "/brochure" ("http://localhost:8080/api) and direct to show the all brochure and order
      Name : ("http://localhost:8080/api") <h3> {props.buyer} <h3>
      Address : ("http://localhost:8080/api)
-     Products : ("https://localhost:7142/api/Products")
+     Title : ("https://localhost:7142/api/Products")
+     Description : ("https://localhost:7142/api/Products")
+      Price : ("https://localhost:7142/api/Products")
    8. Back to Home
