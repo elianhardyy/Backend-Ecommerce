@@ -13,7 +13,7 @@ I will describe and explain the flow of project:
   5. This "products" file means that if you want to post your product on ecommerce for public so that is the reason I made this backend
   6. I made getmapping for get all products and implements in frontend , actually there is a card which allow us to buy this product and on the other case you able to edit and delete that product
   7. and then the flow project is items, items means if you want buy a products you can write your name as "buyer"  and address as "address"
-  8. I choose Springboot ( Java) because to 
+  8. I choose Springboot ( Java) due to learn deeper about Java Development 
   9. and then in frontend I'm planning all backend can merge and I make a brochure for "product" and "items" that you have ordered product of ecommerce.    
  
 - for frontend
