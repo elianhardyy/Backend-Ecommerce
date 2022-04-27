@@ -22,10 +22,15 @@ public class ItemService {
     }
     
     public Items editItems(Items item){
-        Items olditem = itemRepo.findById((long) item.getId()).orElse(null); 
+        Items olditem = itemRepo.findById((item.getId()).orElse(null); 
         olditem.setBuyer(item.getBuyer());
         olditem.setAddress(item.getAddress());
         itemRepo.save(olditem);
         return olditem;
     }
+    public Integer delItems(int id){
+        itemRepo.deleteById(id);
+        return id;
+    }
+    
 }
