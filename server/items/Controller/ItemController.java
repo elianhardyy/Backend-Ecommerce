@@ -12,9 +12,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping(value="/api")
+@CrossOrigin
 public class ItemController {
     @Autowired ItemService itemservice;
 
@@ -30,5 +32,8 @@ public class ItemController {
     public Items putItem(@RequestBody Items item){
         return itemservice.editItems(item);
     }
-
+    @DeleteMapping("/{id}")
+    public Integer deleteItem(@PathVariable int id){
+        return itemservice.delItems(id);
+    }
 }
