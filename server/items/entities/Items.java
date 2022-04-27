@@ -5,14 +5,14 @@ package com.example.backend.entities;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Id;
-
+import javax.persistence.GeneratedValue;
 @Entity
 @Table(name = "items")
 public class Items {
 
 
     @Id
-    
+    @GeneratedValue
     public int Id;
     
     public String Buyer;
